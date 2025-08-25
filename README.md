@@ -21,24 +21,24 @@ In this setting, a low-spec machine on Google Colab (free version) is sufficient
 
 Learning models for accuracy comparison:
 
-Standard LSTM implemented with TensorFlow (Adam optimizer for gradient descent)
+- Standard LSTM implemented with TensorFlow (Adam optimizer for gradient descent)
 
-LSTM with a novel gradient descent method without backpropagation
+- LSTM with a novel gradient descent method without backpropagation
 
-GRU with a novel gradient descent method without backpropagation
+- GRU with a novel gradient descent method without backpropagation
 
-Fast-lightweight LSTM
+- Fast-lightweight LSTM
 
-Reservoir computing (online) with double-loop training via Bayesian Optimization
+- Reservoir computing (online) with double-loop training via Bayesian Optimization
 
 
 
 Conclusions:
 
-For time series prediction with around 5,000 data points, designing an architecture based on the data characteristics achieves better learning performance than using standard libraries directly.
+- For time series prediction with around 5,000 data points, designing an architecture based on the data characteristics achieves better learning performance than using standard libraries directly.
 
 
-Even a simple architecture, such as the fast-lightweight LSTM, can achieve excellent learning results.
+- Even a simple architecture, such as the fast-lightweight LSTM, can achieve excellent learning results.
 
 
-The reservoir with double-loop online learning can achieve strong performance even with only 1,500 + 150 data points (see also Nakai-Saiki 2024).
+- The reservoir with double-loop online learning can achieve strong performance even with only 1,500 + 150 data points (see also Nakai-Saiki 2024).
