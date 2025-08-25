@@ -6,7 +6,7 @@ Personal question is as follows:
 
 So I compared with various ML models for 1D Lorenz data (for the detail, see summary_of_compare_LSTM_GRU_Reservoir.pdf).
 
-- Parameters are fixed for fair accuracy comparison:
+Parameters are fixed for fair accuracy comparison:
 
 - Number of trainable parameters: 20,000 
 (nodes: Reservoir $\sim 150$, LSTM $\sim 70$, GRU $\sim 80$)
