@@ -2,20 +2,20 @@ Please acknowledge the use of these scripts in any publications which make use o
 
 Personal question is as follows:
     
-For small-scale datasets (less than 10,000 samples), is it really necessary to pursue the “context-level dependencies” that LSTMs and Transformers are good at?
+*For small-scale datasets (less than 10,000 samples), is it really necessary to pursue the “context-level dependencies” that LSTMs and Transformers are good at?
 
 So I compared with varios ML models for 1D Lorenz data.
 
-Parameters are fixed for fair accuracy comparison:
+*Parameters are fixed for fair accuracy comparison:
 
-Number of trainable parameters: 20,000 
+*Number of trainable parameters: 20,000 
 (nodes: Reservoir $\sim 150$, LSTM $\sim 70$, GRU $\sim 80$)
 
-Training data size: 5,000
+*Training data size: 5,000
 
-Prediction horizon: 100 steps ahead
+*Prediction horizon: 100 steps ahead
 
-$L^2$ regularization parameter: 0.0001
+*$L^2$ regularization parameter: 0.0001
 
 In this setting, a low-spec machine on Google Colab (free version) is sufficient!
 
