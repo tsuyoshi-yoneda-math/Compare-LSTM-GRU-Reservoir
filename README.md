@@ -4,7 +4,7 @@ Personal question is as follows:
     
 - For small-scale datasets (less than 10,000 samples), is it really necessary to pursue the “context-level dependencies” that LSTMs and Transformers are good at?
 
-So I compared with varios ML models for 1D Lorenz data.
+So I compared with varios ML models for 1D Lorenz data (for the detail of it, see summary_of_compare_LSTM_GRU_Reservoir.pdf).
 
 - Parameters are fixed for fair accuracy comparison:
 
