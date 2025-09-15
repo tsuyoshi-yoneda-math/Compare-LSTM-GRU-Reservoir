@@ -41,4 +41,4 @@ Conclusions:
 - Even a simple architecture, such as the fast-lightweight LSTM, can achieve excellent learning results.
 
 
-- The reservoir with double-loop online learning can achieve strong performance even with only 1,500 + 150 data points (see also Nakai-Saiki 2024).
+- The reservoir with double-loop online learning can achieve strong performance even with only 1,500 + 50 data points (see also Nakai-Saiki 2024).
