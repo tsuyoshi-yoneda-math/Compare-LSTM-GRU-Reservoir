@@ -1,44 +1,7 @@
-Please acknowledge the use of these scripts in any publications which make use of them.
+Please acknowledge the use of these scripts in any publications that make use of them.
 
-Personal question is as follows:
-    
-- For small-scale datasets (less than 10,000 samples), is it really necessary to pursue the “context-level dependencies” that LSTMs and Transformers are good at?
+We compared the predictive performance of LSTM, GRU, and reservoir models.
+In conclusion, when the goal is to construct a robust prediction model using only a small amount of data, the reservoir approach is overwhelmingly superior.
+This result is also consistent with the findings of 
 
-So I compared with various ML models for 1D Lorenz data (for the detail, see summary_of_compare_LSTM_GRU_Reservoir.pdf).
-
-Parameters are fixed for fair accuracy comparison:
-
-- Number of trainable parameters: 20,000 
-(nodes: Reservoir $\sim 150$, LSTM $\sim 70$, GRU $\sim 80$)
-
-- Training data size: 5,000
-
-- Prediction horizon: 100 steps ahead
-
-- $L^2$ regularization parameter: 0.0001
-
-In this setting, a low-spec machine on Google Colab (free version) is sufficient!
-
-Learning models for accuracy comparison:
-
-- Standard LSTM implemented with TensorFlow (Adam optimizer for gradient descent)
-
-- LSTM with a novel gradient descent method without backpropagation
-
-- GRU with a novel gradient descent method without backpropagation
-
-- Fast-lightweight LSTM
-
-- Reservoir computing (online) with double-loop training via Bayesian Optimization
-
-
-
-Conclusions:
-
-- For time series prediction with around 5,000 data points, designing an architecture based on the data characteristics achieves better learning performance than using standard libraries directly.
-
-
-- Even a simple architecture, such as the fast-lightweight LSTM, can achieve excellent learning results.
-
-
-- The reservoir with double-loop online learning can achieve strong performance even with only 1,500 + 50 data points (see also Nakai-Saiki 2024).
+Nakai–Saiki (2024): https://arxiv.org/abs/2407.06229
